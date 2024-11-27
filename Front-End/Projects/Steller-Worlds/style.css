@@ -1,0 +1,209 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #00b32e;
+    padding: 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Container for logo and navigation */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Logo styling */
+.sw_logo {
+    white-space: nowrap;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 15px;
+    position: absolute;
+    left: 15px;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Navigation list */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation items */
+nav li {
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+/* Navigation links */
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Various Screen Sizes */
+
+/* 8K (7680x4320) */
+@media (min-width: 7680px) {
+    body {
+        font-size: 24px;
+    }
+
+    .sw_logo {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    nav li {
+        margin: 0 2.5rem;
+    }
+}
+
+/* 4K (3840x2160) */
+@media (min-width: 3840px) {
+    body {
+        font-size: 22px;
+    }
+
+    .sw_logo {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    nav li {
+        margin: 0 2rem;
+    }
+}
+
+/* 2K (2560x1440) */
+@media (min-width: 2560px) {
+    body {
+        font-size: 20px;
+    }
+
+    .sw_logo {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    nav li {
+        margin: 0 1.8rem;
+    }
+}
+
+/* 1080P (1920x1080) */
+@media (min-width: 1920px) {
+    body {
+        font-size: 18px;
+    }
+
+    .sw_logo {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    nav li {
+        margin: 0 1.3rem;
+    }
+}
+
+/* 720P (1280x720) */
+@media (min-width: 1280px) {
+    body {
+        font-size: 16px;
+    }
+
+    .sw_logo {
+        font-size: 1.4rem;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0 1rem;
+    }
+}
+
+/* Mobile devices (Less than 768px width) */
+@media (max-width: 768px) {
+    .sw_logo {
+        font-size: 1.2rem;
+        margin-bottom: 0.15rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-right: -9rem;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
